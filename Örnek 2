@@ -1,0 +1,12 @@
+#2  A number is even if it is perfectly divisible by 2. When the number is divided by 2, we use the remainder operator % to compute the remainder. If the remainder is not zero, the number is odd.
+a = input("Bir sayı giriniz:")
+def tek_cift_mi (x):
+    x = int(x)
+    if x % 2 == 0 :
+        print(x,"bir çift sayıdır.")
+    else:
+        print(x,"bir tek sayıdır.")
+try:
+    tek_cift_mi(a)
+except:
+    print("Lütfen doğru bir sayı giriniz.")
