@@ -1,0 +1,14 @@
+#1 What a program to check if user input is negative or positive.
+a = input("Bir sayı giriniz:")
+def pozitif_negatif_kontrol (x):
+    x = int(x)
+    if x == 0:
+        print(x,"nötr bir sayıdır.")
+    elif x>0 :
+        print(x,"pozitif bir sayıdır.")
+    else:
+        print(x,"negatif bir sayıdır.")
+try:
+    pozitif_negatif_kontrol(a)
+except:
+    print("Lütfen doğru bir sayı giriniz.")
