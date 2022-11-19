@@ -1,0 +1,15 @@
+#4 A positive integer greater than 1 which has no other factors except 1 and the number itself is called a prime number. 2, 3, 5, 7 etc. are prime numbers as they do not have any other factors.
+a = input("Bir sayı giriniz:")
+def asal_mi(x):
+    x = int(x)
+    for i in range(2,int(x**1/2)+1): # range(1,x) de çalışır ama büyük sayılar için daha yavaş çalışır.
+        if x%i == 0:
+            return False
+    return True
+try:
+    if asal_mi(a) == True:
+        print(a,"asal bir sayıdır.")
+    else:
+        print(a,"asal değildir.")
+except:
+    print("Lütfen doğru bir sayı giriniz.")
